@@ -1,5 +1,6 @@
-'use strict'
-const x=10
+// to assign value =
+// to compare values ==
+// to compare values stricktly ===
 
 let videos =[
     {title: "titanic", director:"James Cameron", genre: "romance", released:1997},
@@ -25,7 +26,7 @@ exports.delete = (title) => {
     });
     // if old & new array lengths differ, item was deleted
     return {deleted: oldLength !== movies.length, total: movies.length };
-};
+}; 
 exports.add = (newmovie) => {
   const oldLength = movies.length;
   // use existing get() method to check if movies already in our list
@@ -36,3 +37,4 @@ exports.add = (newmovie) => {
   // if old & new array lengths differ, item was added
   return {added: oldLength !== movies.length, total: movies.length };
 };
+
