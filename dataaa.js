@@ -1,7 +1,7 @@
 const expect= require("chai").expect;
 const movie=require("../data");
 
-describe("Movie module", () => {
+describe("movie module", () => {
     it("return requested movie", () => {
         const result = movie.getltem("titanic");
         expect(result).to.deep.equal({ "firstName" : "James"
