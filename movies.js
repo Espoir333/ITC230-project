@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 // const ip = process.env.ip || '127.0.0.1';
 // const connectionString = 'mongodb://' +ip+ '/<DB_NAME>';
 
-mongoose.connect(connectionString, { dbName: "scc-dbproject", useNewUrlParser: false }); 
+mongoose.connect(connectionString, { dbName: "scc-dbprooject", useNewUrlParser: false }); 
 
 mongoose.connection.on('open', () => {
   console.log('Mongoose connected.');
